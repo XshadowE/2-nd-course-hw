@@ -12,8 +12,8 @@ body{
 }
 
 .center{
-    padding-left: calc(50% - 512px);
-    padding-right: calc(50% - 512px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .head{
@@ -29,7 +29,7 @@ body{
     flex-direction: column;
 }
 
-.header_title{
+.header__title{
     display:flex;
     color: #FFF;
     font-size: 64px;
@@ -52,7 +52,7 @@ span.bolt{
     font-weight: 700;
 }
 
-.header_button{
+.header__button{
     width: 234px;
     height: 48px;
     display: block;
@@ -71,7 +71,7 @@ span.bolt{
     margin-top: 44px;
 }
 
-.main_catalog{
+.main__catalog{
     height: 556px;
     background-image: url(./img/background_2.jpg);
     background-repeat: no-repeat;
@@ -91,21 +91,22 @@ span.bolt{
     height: 300px;
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    display: flex;
 }
 
-.main__game1{
+.main-game1{
     background-image: url(./img/game_1.jpg);
 }
 
-.main__game2{
+.main-game2{
     background-image: url(./img/game_2.jpg);
 }
 
-.main__game3{
+.main-game3{
     background-image: url(./img/game_3.jpg);
 }
 
-.text_game{
+.main__text{
     display: flex;
     flex-direction: column;
     justify-content: center;
