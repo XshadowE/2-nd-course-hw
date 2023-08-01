@@ -33,17 +33,17 @@ b = 2;
 alert(a % b); // задание 7
 
 var num = 1;
-console.log(num++ + 5); //6
+console.log(num += 5); //6
 
-console.log(num++ - 3); //-1
+console.log(num -= 3); //3
 
-console.log(--num * 7); //14
+console.log(num *= 7); //21
 
-console.log(num++ / 3); //0.6666
+console.log(num /= 3); //7
 
-console.log(--num + 1); //3
+console.log(num += 1); //8
 
-console.log(num++ + -1); //1
+console.log(num -= -1); //9
 
 alert(num); // задание 8
 
