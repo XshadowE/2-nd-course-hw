@@ -1,7 +1,5 @@
 "use strict";
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 // задание 1
 var a;
 a = 10;
@@ -43,7 +41,7 @@ console.log(num /= 3); //7
 
 console.log(num += 1); //8
 
-console.log(num -= -1); //9
+console.log(num -= 1); //7
 
 alert(num); // задание 8
 
@@ -51,14 +49,14 @@ var age;
 age = prompt('Сколько вам лет?');
 alert(age); // задание 9
 
-var user = _defineProperty({
+var user = {
   userName: 'Вася',
   age: 28,
   isAdmin: true
-}, "city of residence", 'Новосибирск');
-
+};
 console.log(user);
-delete user["city of residence"];
+user['city of residence key'] = 'Новосибирск';
+delete user['city of residence key'];
 var key = 'age';
 user[key] = 33;
 console.log(user);

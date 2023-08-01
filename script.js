@@ -41,7 +41,7 @@ console.log (num -=3); //3
 console.log (num *=7); //21
 console.log (num /=3); //7
 console.log (num +=1); //8
-console.log (num -=-1); //9
+console.log (num -=1); //7
 alert(num);
 
 // задание 8
@@ -53,13 +53,13 @@ alert (age);
 const user = {
     userName: 'Вася',
     age: 28,
-    isAdmin: true,
-    ["city of residence"]:'Новосибирск'
+    isAdmin: true
 } 
 console.log(user);
 
-delete user ["city of residence"];
+user['city of residence key'] = 'Новосибирск';
 
+delete user ['city of residence key']
 
 const key = 'age';
 user [key] = 33;
