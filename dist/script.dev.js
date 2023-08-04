@@ -55,8 +55,8 @@ var user = {
   isAdmin: true
 };
 console.log(user);
-user['city of residence key'] = 'Новосибирск';
-delete user['city of residence key'];
+user['city of residence'] = 'Новосибирск';
+delete user['city of residence'];
 var key = 'age';
 user[key] = 33;
 console.log(user);

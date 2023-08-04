@@ -57,9 +57,9 @@ const user = {
 } 
 console.log(user);
 
-user['city of residence key'] = 'Новосибирск';
+user['city of residence'] = 'Новосибирск';
 
-delete user ['city of residence key']
+delete user ['city of residence']
 
 const key = 'age';
 user [key] = 33;
