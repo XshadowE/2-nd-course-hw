@@ -1,5 +1,34 @@
 @media (max-width: 767px) {
-    .center {
-        padding-left: 16px;
-        padding-right: 16px;
+.center {
+    padding-left: 16px;
+    padding-right: 16px;
     }
+
+.main {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.head {
+    height: 735px;
+}
+
+.main__catalog {
+    height: 1221px;
+}
+
+.header__title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.header__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.header__button {
+    margin-top: 32px;
+}
+
+}
