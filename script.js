@@ -7,12 +7,12 @@ a = 20;
 alert (a);
 
 // задание 2
-let year = 2007;
+const year = 2007;
 // year = prompt('Год выпуска первого iPhone');
 alert (year);
 
 // задание 3
-let userName = "Брендан Эйх";
+const userName = "Брендан Эйх";
 // Имя создателя языка JavaScript');
 alert (userName);
 

@@ -1,8 +1,8 @@
 // задание 1
 let password = 2891;
-let answer = prompt('Введите пароль');
+password = prompt('Введите пароль');
 
-if (answer === '2891') {
+if (password === '2891') {
     alert('Пароль введен верно');
 }
 else {
@@ -97,10 +97,8 @@ switch (monthNumber) {
 
 // дополнительные
 // задание 7 
-let num = prompt('Пожалуйста, введите любое число');
-
-let x = Number(num);
-alert(x);
+let num = Number (prompt('Пожалуйста, введите любое число'));
+    alert(num);
     
 if (num % 2 === 0) {
     alert('Число четное');
@@ -109,13 +107,11 @@ if (num % 2 === 0) {
 }
 
 // задание 8
-let clientOS = 0 || 1; // 0 iOS, 1 Android
-clientOS = prompt('Какую версию операционной системы Вы используете?');
-
-if (clientOS === '0' || '1') {
-    alert('Установите версию приложения для iOS по ссылке');
-} else {
-    alert('Установите версию приложения для Android по ссылке');
+let clientOS = confirm ('Ваша операционная система iOS');
+if (clientOS === true) {
+    console.log('Установите версию приложения для iOS по ссылке');
+} else if (clientOS === false) {
+    console.log('Установите версию приложения для Android по ссылке');
 }
 
 // задание 9
@@ -123,17 +119,17 @@ let clientDeviceYear = 2015;
 
 clientOS = prompt('Какую версию операционной системы Вы используете?');
 if (clientOS === 'iOS') {
-    clientDeviceYear = prompt('Укажите год выпуска смартфона');
+    clientDeviceYear = Number (prompt('Укажите год выпуска смартфона'));
     if (clientDeviceYear > 2015) {
         alert('Установите версию приложения для iOS по ссылке');
-    } else{
+    } else if (clientDeviceYear < 2015){
         alert('Установите облегченную версию приложения для iOS по ссылке');
     }
 } else {
-    clientDeviceYear = prompt('Укажите год выпуска смартфона');
+    clientDeviceYear = Number (prompt('Укажите год выпуска смартфона'));
     if (clientDeviceYear > 2015) {
         alert('Установите версию приложения для Android по ссылке');
-    } else {
+    } else if (clientDeviceYear < 2015) {
         alert('Установите облегченную версию приложения для Android по ссылке');
     }
 }
