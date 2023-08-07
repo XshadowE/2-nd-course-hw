@@ -1,13 +1,13 @@
 // задание 1
 let password = 2891;
-password = prompt('Введите пароль');
+let x = Number(prompt('Введите пароль'));
 
-if (password === '2891') {
+if (x === password) {
     alert('Пароль введен верно');
 }
 else {
-        alert('Пароль введен неправильно');
-    }
+      alert('Пароль введен неправильно');
+}
 
 // задание 2
 let c = 8;
@@ -98,7 +98,11 @@ switch (monthNumber) {
 // дополнительные
 // задание 7 
 let num = Number (prompt('Пожалуйста, введите любое число'));
-    alert(num);
+    if (num !== isNaN) {
+        alert(num);
+    } else {
+        alert(NaN);
+}
     
 if (num % 2 === 0) {
     alert('Число четное');
@@ -110,26 +114,26 @@ if (num % 2 === 0) {
 let clientOS = confirm ('Ваша операционная система iOS');
 if (clientOS === true) {
     console.log('Установите версию приложения для iOS по ссылке');
-} else if (clientOS === false) {
+} else {
     console.log('Установите версию приложения для Android по ссылке');
 }
 
 // задание 9
 let clientDeviceYear = 2015;
 
-clientOS = prompt('Какую версию операционной системы Вы используете?');
-if (clientOS === 'iOS') {
+clientOS = confirm('Ваша операционная система iOS');
+if (clientOS === true) {
     clientDeviceYear = Number (prompt('Укажите год выпуска смартфона'));
     if (clientDeviceYear > 2015) {
         alert('Установите версию приложения для iOS по ссылке');
-    } else if (clientDeviceYear < 2015){
+    } else { (clientDeviceYear < 2015);
         alert('Установите облегченную версию приложения для iOS по ссылке');
     }
 } else {
     clientDeviceYear = Number (prompt('Укажите год выпуска смартфона'));
     if (clientDeviceYear > 2015) {
         alert('Установите версию приложения для Android по ссылке');
-    } else if (clientDeviceYear < 2015) {
+    } else { (clientDeviceYear < 2015);
         alert('Установите облегченную версию приложения для Android по ссылке');
     }
 }
