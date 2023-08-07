@@ -24,23 +24,22 @@ do {
 const salaries = {'Коля': 200, 'Вася':300, 'Петя':400
 }
 for (let key in salaries) {
-    let salary = salaries[key] + '$';
-    console.log(`${key}- зарплата ${salary}`);
+    console.log(`${key}- зарплата $`);
 }
 
 // задание 5
 let n = 1000;
 let num = 0;
 
-while (n >= 50) {
+do {
     n= n/2;
     num++;
-    console.log('итераций:' + num + 'число' + n); // 5 итераций
+} while (n >= 50) {
+    console.log('Итераций:' + num + 'число' + n); // 5 итераций
 }
-
+    
 // задание 6 
-for (let day = 5; day <= 31; day++) {
-    day = day+7;
+for (let day = 5; day <= 31; day+=7) {
     console.log(`Сегодня пятница ${day} число, необходимо подготовить отчет`);
 }
 
