@@ -24,7 +24,9 @@ do {
 const salaries = {'Коля': 200, 'Вася':300, 'Петя':400
 }
 for (let key in salaries) {
-    console.log(`${key}- зарплата $`);
+    let salary = salaries[key];
+
+    console.log(`${key}- зарплата ${salary} $`);
 }
 
 // задание 5
@@ -34,9 +36,10 @@ let num = 0;
 do {
     n= n/2;
     num++;
-} while (n >= 50) {
+} while (n >= 50); 
+
     console.log('Итераций:' + num + 'число' + n); // 5 итераций
-}
+
     
 // задание 6 
 for (let day = 5; day <= 31; day+=7) {
