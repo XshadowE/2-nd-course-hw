@@ -98,11 +98,8 @@ switch (monthNumber) {
 // дополнительные
 // задание 7 
 let num = Number (prompt('Пожалуйста, введите любое число'));
-    if (num !== isNaN) {
-        alert(num);
-    } else {
-        alert(NaN);
-}
+   isNaN(num);
+   console.log(num !== isNaN(Number)); 
     
 if (num % 2 === 0) {
     alert('Число четное');
@@ -124,11 +121,7 @@ let clientDeviceYear = 2015;
 clientOS = confirm('Ваша операционная система iOS');
 if (clientOS === true) {
     clientDeviceYear = Number (prompt('Укажите год выпуска смартфона'));
-    if (clientDeviceYear > 2015) {
-        alert('Установите версию приложения для iOS по ссылке');
-    } else { (clientDeviceYear < 2015);
-        alert('Установите облегченную версию приложения для iOS по ссылке');
-    }
+
 } else {
     clientDeviceYear = Number (prompt('Укажите год выпуска смартфона'));
     if (clientDeviceYear > 2015) {
