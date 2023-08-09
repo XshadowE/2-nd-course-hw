@@ -1,0 +1,146 @@
+@keyframes animation {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+    25%,
+	75% {
+		opacity: 0;
+	}
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.head{
+    height: 1024px;
+    background-image: url(./img/background_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title{
+    display:flex;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 217px;
+}
+
+.header__text{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    padding-top: 32px;
+}
+
+span.bolt{
+    font-weight: 700;
+}
+
+.header__button{
+    width: 234px;
+    height: 48px;
+    display: block;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background: #9C0332;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 44px;
+    animation: animation 2s ease 0s 10 normal forwards;
+    }
+
+
+.main__catalog{
+    height: 556px;
+    background-image: url(./img/background_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main{
+    display: grid;
+    gap: 32px;
+    padding-top: 128px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.main__game{
+    grid-column: span 4;
+    height: 300px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    display: flex;
+    transition: all 1s;
+}
+
+.main__game:hover{
+    transform: scale(1.05);
+}
+
+.main-game1{
+    background-image: url(./img/game_1.jpg);
+}
+
+.main-game2{
+    background-image: url(./img/game_2.jpg);
+}
+
+.main-game3{
+    background-image: url(./img/game_3.jpg);
+}
+
+.main__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+    padding-top: 236px;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+@import 'mobile';
