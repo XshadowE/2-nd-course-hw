@@ -36,7 +36,43 @@ alert(result);
 
 // задание 4
 
-let age = prompt('Сколько Вам лет?');
-function age(params) {
-    
+function age (question, answer) {
+    let userAnswer = prompt (question);
+    if (userAnswer < 0 ) {
+        alert('Вы ввели неправильное значение');
+        return age;
+    } if (userAnswer >= 0 && userAnswer <= 12 ) {
+        alert('Привет, друг!');
+    } else {
+       alert('Добро пожаловать!'); 
+    }
 }
+    age('Сколько Вам лет?');
+
+ // задание 5
+
+ function check(a, b) {
+    let numUser = Number (prompt('Введите два числа'));
+    if (isNaN(numUser)) {
+        alert('Одно или оба значения не являются числом');
+        return check;
+    } else {
+        let sum = a + b;
+    } alert(`${a + b}`);
+ }
+ check(4, 5);
+
+ // задание 6
+
+ function number(n) {
+    let userNum = Number(prompt('Введите число'));
+    if (isNaN(userNum)) {
+        alert('Переданный параметр не является числом');
+        return number;
+    } else {
+         degree = (n***3);
+    } alert(`${n} в кубе равняется ${degree}`);
+ }
+ number(0);
+
+
