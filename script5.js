@@ -36,7 +36,7 @@ alert(result);
 
 // задание 4
 
-function age (question, answer) {
+function age (question) {
     let userAnswer = prompt (question);
     if (userAnswer < 0 ) {
         alert('Вы ввели неправильное значение');
@@ -56,11 +56,11 @@ function age (question, answer) {
     if (isNaN(numUser)) {
         alert('Одно или оба значения не являются числом');
         return check;
-    } else {
-        let sum = a + b;
-    } alert(`${a + b}`);
- }
- check(4, 5);
+    } else if (a >= 0, b >= 0) {
+        alert(`${a + b}`);
+    }
+}
+    check(4, 5);
 
  // задание 6
 
@@ -70,9 +70,32 @@ function age (question, answer) {
         alert('Переданный параметр не является числом');
         return number;
     } else {
-         degree = (n***3);
+         degree = (n**3);
     } alert(`${n} в кубе равняется ${degree}`);
  }
- number(0);
+ number(10);
 
+ // задание 7
 
+ function getCircleArea() {
+        return 2 * Math.PI * this.radius;
+    }
+ function getCirclePerimeter() {
+        return 2 * Math.PI * this.radius * this.radius;
+    }
+const circle1 = {
+    radius: 2,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
+ };
+
+ const circle2 = {
+    radius: 8,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
+ };
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
