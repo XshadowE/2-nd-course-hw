@@ -143,4 +143,38 @@ span.bolt{
     }
 }
 
+.game__box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 800px;
+    background-image: url(./img/background_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header__title-box{
+        display:flex;
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 282px;
+    }
+
+.img{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 223px;
+}
+
+.vector{
+    width: 485px;
+    height: 333px;
+}
+
+
+
 @import 'mobile';
