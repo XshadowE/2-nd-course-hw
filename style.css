@@ -179,6 +179,12 @@ span.bolt {
   .head {
     height: 735px;
   }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .main__catalog {
     height: 1221px;
   }
@@ -187,11 +193,33 @@ span.bolt {
     font-size: 32px;
   }
   .header__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
   }
   .header__button {
     margin-top: 32px;
+  }
+  .game__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .header__title-box {
+    padding-top: 51px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .img {
+    padding-top: 64px;
+  }
+  .vector {
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
