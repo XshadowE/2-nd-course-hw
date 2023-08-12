@@ -1,6 +1,8 @@
 function Season() {
     let month = Number(prompt('Номер месяца'));
-    if (month >= 3 && month <= 5) {
+    if (isNaN(month)) {
+      alert('введите число!!!');
+    } else if (month >= 3 && month <= 5) {
        return alert('Весна');
     } else if (month >= 6 && month <= 8) {
           return alert('Лето');

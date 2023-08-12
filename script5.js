@@ -10,7 +10,7 @@ console.log(result1, result2);
 // задание 2
 
 function num(n) {
-    let = n % 2 === 0;
+
     if (n % 2 === 0) {
         console.log('число четное');
     } else {
@@ -22,28 +22,29 @@ num(8);
 
 // задание 3
 
-function calc(x, y) {
-    let mult = x**y;
+function calc(x) {
+    let mult = x**2;
     console.log(mult);
 }
 calc(5, 2);
      
-function ret(x, y) {
-    return x**y;
+function ret(x) {
+    return x**2;
 }    
-let result = ret(5, 2);
+let result = ret(5);
 alert(result);
 
 // задание 4
 
 function age (question) {
-    let userAnswer = prompt (question);
+    let userAnswer = Number (prompt (question));
+    if (isNaN(userAnswer) && userAnswer < 0) {
+     } alert('Вы ввели неправильное значение');
     if (userAnswer < 0 ) {
         alert('Вы ввели неправильное значение');
-        return age;
-    } if (userAnswer >= 0 && userAnswer <= 12 ) {
+    } else if (userAnswer >= 0 && userAnswer <= 12 ) {
         alert('Привет, друг!');
-    } else {
+    } else if(userAnswer >= 13) {
        alert('Добро пожаловать!'); 
     }
 }
@@ -55,8 +56,7 @@ function age (question) {
     let numUser = Number (prompt('Введите два числа'));
     if (isNaN(numUser)) {
         alert('Одно или оба значения не являются числом');
-        return check;
-    } else if (a >= 0, b >= 0) {
+    } else if(a >= 0, b >= 0) {
         alert(`${a + b}`);
     }
 }
