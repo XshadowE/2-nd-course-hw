@@ -38,29 +38,30 @@ alert(result);
 
 function age (question) {
     let userAnswer = Number (prompt (question));
-    if (isNaN(userAnswer) && userAnswer < 0) {
-     } alert('Вы ввели неправильное значение');
-    if (userAnswer < 0 ) {
-        alert('Вы ввели неправильное значение');
-    } else if (userAnswer >= 0 && userAnswer <= 12 ) {
+    if (isNaN(userAnswer)) {
+      alert('введите число!!!');
+    } else if(userAnswer >= 0 && userAnswer <= 12 ) {
         alert('Привет, друг!');
     } else if(userAnswer >= 13) {
        alert('Добро пожаловать!'); 
+    } else if(userAnswer < 0) {
+        alert('Вы ввели неправильное значение');
     }
 }
     age('Сколько Вам лет?');
 
  // задание 5
 
- function check(a, b) {
-    let numUser = Number (prompt('Введите два числа'));
-    if (isNaN(numUser)) {
-        alert('Одно или оба значения не являются числом');
-    } else if(a >= 0, b >= 0) {
-        alert(`${a + b}`);
+    let y = Number (prompt('Введите первое число'));
+    let z = Number (prompt('Введите второе число'));
+    function mult(y, z) {
+    if (isNaN(mult)) {
+        alert('Одно или оба значения не являются числом');  
+    }else {
+    alert(mult(`${y * z}`));
     }
-}
-    check(4, 5);
+    }
+    mult(4, 5);
 
  // задание 6
 
@@ -68,7 +69,7 @@ function age (question) {
     let userNum = Number(prompt('Введите число'));
     if (isNaN(userNum)) {
         alert('Переданный параметр не является числом');
-        return number;
+        return n;
     } else {
          degree = (n**3);
     } alert(`${n} в кубе равняется ${degree}`);
@@ -78,19 +79,21 @@ function age (question) {
  // задание 7
 
  function getCircleArea() {
-        return 2 * Math.PI * this.radius;
+        return 2 * this.pi * this.radius;
     }
  function getCirclePerimeter() {
-        return 2 * Math.PI * this.radius * this.radius;
+        return this.pi * this.radius * this.radius;
     }
 const circle1 = {
     radius: 2,
+    pi: 3.14,
     getArea: getCircleArea,
     getPerimeter: getCirclePerimeter,
  };
 
  const circle2 = {
     radius: 8,
+    pi: 3.14,
     getArea: getCircleArea,
     getPerimeter: getCirclePerimeter,
  };
