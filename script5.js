@@ -55,18 +55,19 @@ function age (question) {
     let y = Number (prompt('Введите первое число'));
     let z = Number (prompt('Введите второе число'));
     function mult(y, z) {
-    if (isNaN(mult)) {
+    if (isNaN(y) && isNaN(z)) {
         alert('Одно или оба значения не являются числом');  
     }else {
-    alert(mult(`${y * z}`));
+    alert(`${y * z}`);
     }
     }
     mult(4, 5);
 
  // задание 6
 
- function number(n) {
-    let userNum = Number(prompt('Введите число'));
+
+     let userNum = Number(prompt('Введите число'));
+    function number(n) {
     if (isNaN(userNum)) {
         alert('Переданный параметр не является числом');
         return n;
