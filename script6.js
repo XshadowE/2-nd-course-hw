@@ -64,8 +64,8 @@ console.log(all);
 
 // задание 10 
 
-const max = 10;
-const get = 
+const get = [];
+for (f = 1; f <= 10; f++) {
 
-const result = z.reduce((intermediate, value) => intermediate + value);
-console.log(result);
+	console.log(get[f]);
+} 
