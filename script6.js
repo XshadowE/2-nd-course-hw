@@ -45,8 +45,11 @@ console.log(enumeration.pop());
 console.log(enumeration);
 
 // задание 7
-const x = [9, 8, 7, 6, 5];
-let userNum = prompt('Угадайте число');
+
+let numb = [9, 8, 7, 6, 5];
+let result1 = numb.includes(Number(prompt('Введите число'))) ? 'Угадал' : 'Не угадал';
+alert(result1);
+
 
 // задание 8 
 const str = 'abcdef'; 
@@ -64,8 +67,50 @@ console.log(all);
 
 // задание 10 
 
-const get = [];
-for (f = 1; f <= 10; f++) {
-
-	console.log(get[f]);
+const get = [3, 4, 8, 9, 1];
+for (f = 0; f < get.length -1; f++) {
+console.log(get[f] + 1);
 } 
+
+// задание 11
+
+const typeNumber = [4, 6, 10, 12];
+let result = typeNumber.map (item => (item**2));
+console.log(result);
+
+// задание 12
+
+const getLengthWords = source => source.map (str => str.length);
+console.log(getLengthWords (['слово', '', 'слог', 'длинное предложение', 'буква']));
+
+// задание 13
+
+function filterPositive(array) {
+	const result = array.filter(array => array < 0);
+	console.log(result);
+  }
+  
+  filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
+  filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
+
+// дополнительно задание 14
+
+mass1 = [];
+for (let t = 0; t < 10; t++) {
+mass1[t] = Math.round(Math.random() *11);
+}
+mass2 = mass1.filter(num => num % 2 === 0);
+
+console.log(mass1);
+console.log(mass2);
+
+// задание 15
+
+mas1 = [];
+for (let f = 0; f < 6; f++) {
+	mas1[f] = Math.round(Math.random() *10);
+}
+mas2 = mas1.reduce(num => num % 6);
+
+console.log(mas1);
+console.log(mas2);
