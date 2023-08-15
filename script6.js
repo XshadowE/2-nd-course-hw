@@ -107,7 +107,7 @@ console.log(mass2);
 
 mas1 = [];
 for (let f = 0; f < 6; f++) {
-	mas1[f] = Math.round(Math.random() *10);
+	mas1[f] = Math.round(Math.random() *10) + 1;
 }
 mas2 = mas1.reduce((a, b) => a + b) / mas1.length;
 
