@@ -26,7 +26,7 @@ function calc(x) {
     let mult = x**2;
     console.log(mult);
 }
-calc(5, 2);
+calc(5);
      
 function ret(x) {
     return x**2;
@@ -40,11 +40,11 @@ function age (question) {
     let userAnswer = Number (prompt (question));
     if (isNaN(userAnswer)) {
       alert('введите число!!!');
-    } else if(userAnswer >= 0 && userAnswer <= 12 ) {
+    } else if(userAnswer >= 0 && userAnswer == 12) {
         alert('Привет, друг!');
     } else if(userAnswer >= 13) {
        alert('Добро пожаловать!'); 
-    } else if(userAnswer < 0) {
+    } else if(userAnswer < 0 || userAnswer == '') {
         alert('Вы ввели неправильное значение');
     }
 }
@@ -52,31 +52,29 @@ function age (question) {
 
  // задание 5
 
-    let y = Number (prompt('Введите первое число'));
-    let z = Number (prompt('Введите второе число'));
-    function mult(y, z) {
+    let typeNum = (y, z) => {
     if (isNaN(y) || isNaN(z)) {
         return('Одно или оба значения не являются числом');  
     }else {
     return (y * z);
     }
     }
-    console.log(mult(4, 5));
-    console.log(mult(NaN));
+    console.log(typeNum(4, 5));
+    console.log(typeNum(NaN));
 
  // задание 6
 
 
-     let userNum = Number(prompt('Введите число'));
-    function number(n) {
-    if (isNaN(userNum)) {
+    function number() {
+    let userNum = Number(prompt('Введите число'));
+
+    if (isNaN(userNum) || userNum == '') {
         alert('Переданный параметр не является числом');
-        return n;
     } else {
-         degree = (n**3);
-    } alert(`${n} в кубе равняется ${degree}`);
+     alert(`${userNum} в кубе равняется ${userNum ** 3}`);
  }
- number(10);
+}
+ number();
 
  // задание 7
 
