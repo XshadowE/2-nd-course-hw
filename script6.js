@@ -2,16 +2,17 @@
 
 const numbers = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbers.length; i++){
-    if (numbers[i] === 11) break;
+    if (numbers[i] === 10) break;
 console.log(numbers[i]);
 }
 
 // задание 2
 
-const nums = [1, 5, 4, 10, 0, 3];
-let search = nums.includes (4);
 
-console.log(nums.includes(4));
+const nums = [1, 5, 4, 10, 0, 3];
+console.log(nums.indexOf(4));
+
+
 
 // задание 3
 
@@ -59,8 +60,8 @@ console.log(reverse);
 
 // задание 9
 
-mean = [[1, 2, 3,],[4, 5, 6]];
-all = [].concat(...mean);
+let mean = [[1, 2, 3,],[4, 5, 6]];
+let all = [].concat(...mean);
 
 console.log(all);
 
@@ -94,22 +95,22 @@ function filterPositive(array) {
 
 // дополнительно задание 14
 
-mass1 = [];
+let mass1 = [];
 for (let t = 0; t < 10; t++) {
-mass1[t] = Math.round(Math.random() *10);
+mass1[t] = Math.floor(Math.random() *11);
 }
-mass2 = mass1.filter(num => num % 2 === 0);
+let mass2 = mass1.filter(num => num % 2 === 0);
 
 console.log(mass1);
 console.log(mass2);
 
 // задание 15
 
-mas1 = [];
+let mas1 = [];
 for (let f = 0; f < 6; f++) {
-	mas1[f] = Math.round(Math.random() *10) + 1;
+	mas1[f] = Math.round(Math.random() *10);
 }
-mas2 = mas1.reduce((a, b) => a + b) / mas1.length;
+let mas2 = mas1.reduce((a, b) => a + b) / mas1.length;
 
 console.log(mas1);
 console.log(mas2);
