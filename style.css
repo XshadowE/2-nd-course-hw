@@ -222,4 +222,34 @@ span.bolt {
     width: 344px;
     height: 236px;
   }
+  .game__box_second {
+    display: flex;
+    align-content: space-between;
+    height: 800px;
+    background-image: url(./img/background_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+  }
+  .header__title-box_second {
+    display: flex;
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 51px;
+  }
+  .header__text_second {
+    display: flex;
+    color: #FFF;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
