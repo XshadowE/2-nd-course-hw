@@ -37,38 +37,38 @@ alert(result);
 // задание 4
 
 function age (question) {
-    let userAnswer = Number (prompt (question));
-    if (isNaN(userAnswer)) {
+    let userAnswer = prompt (question);
+    if (isNaN(userAnswer) || userAnswer === ' ' || userAnswer === null || userAnswer === "") {
       alert('введите число!!!');
-    } else if(userAnswer >= 0 && userAnswer == 12) {
-        alert('Привет, друг!');
-    } else if(userAnswer >= 13) {
-       alert('Добро пожаловать!'); 
-    } else if(userAnswer < 0 || userAnswer == '') {
+    } else if(userAnswer < 0) {
         alert('Вы ввели неправильное значение');
+    } else if(userAnswer <= 12) {
+       alert('Привет друг!'); 
+    } else if(userAnswer >= 13) {
+        alert('Добро пожаловать');
     }
 }
     age('Сколько Вам лет?');
 
  // задание 5
 
-    let typeNum = (y, z) => {
-    if (isNaN(y) || isNaN(z)) {
+    function mult(y, z) {
+    let w = prompt('Введите число');
+    if (isNaN (Number(w)) || w === ' ' || w === null || w === "" ) {
         return('Одно или оба значения не являются числом');  
     }else {
-    return (y * z);
+    return w = (y * z);
     }
     }
-    console.log(typeNum(4, 5));
-    console.log(typeNum(NaN));
+    alert(mult(4, 5));
 
  // задание 6
 
 
     function number() {
-    let userNum = Number(prompt('Введите число'));
+    let userNum = prompt('Введите число');
 
-    if (isNaN(userNum) || userNum == '') {
+    if (isNaN(userNum) || userNum === '') {
         alert('Переданный параметр не является числом');
     } else {
      alert(`${userNum} в кубе равняется ${userNum ** 3}`);
