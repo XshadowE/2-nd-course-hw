@@ -84,8 +84,11 @@ span.bolt{
     text-align: center;
     margin-top: 44px;
     animation: animation 2s ease 0s 10 normal forwards;
-    }
+}
 
+.header__button:hover{
+    cursor: url(./img/hand.png), pointer;   
+}
 
 .main__catalog{
     height: 556px;
@@ -140,6 +143,7 @@ span.bolt{
     line-height: 32px; /* 133.333% */
     &:hover{
         text-decoration: underline;
+        cursor: url(./img/hand.png), pointer;
     }
 }
 
@@ -152,6 +156,7 @@ span.bolt{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    align-content: space-between;
 
 }
 
@@ -176,5 +181,21 @@ span.bolt{
     height: 333px;
 }
 
+.text{
+    order: 2;
+}
+
+.game__box_second{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 800px;
+    background-image: url(./img/background_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-content: space-between;
+}
 
 @import 'mobile';
