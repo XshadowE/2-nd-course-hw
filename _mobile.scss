@@ -64,4 +64,8 @@
 .text{
     order: 1;
 }
+
+.game__box_second{
+    flex-direction: column-reverse;
+}
 }

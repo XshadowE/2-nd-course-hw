@@ -1,3 +1,5 @@
+// game 1
+
 function Season() {
     let month = Number(prompt('Номер месяца'));
     if (isNaN(month)) {
@@ -15,5 +17,22 @@ function Season() {
                 }
 }            
 
-    
+// game 2
+
+function Fruits () {  
+   let list = ['Яблоко',  'Груша',  'Дыня',  'Виноград',  'Персик',  'Апельсин',  'Мандарин'];
+   list = list.sort(() => Math.random() - 0.5);
+   alert(list);
+   let result = prompt('Чему равнялся первый элемент массива?');
+   let result2 = prompt('Чему равнялся последний элемент массива?');
+   if (result === list [0] || result2 === list [6]) {
+      alert('«Вы были близки к победе!»');
+   } else if (result === list [0] && result2 === list [6]){
+      alert('Поздравляем, Вы выиграли!!!');
+   } else {
+      alert ('Вы ответили неверно');
+   }
+} 
+
+
     

@@ -181,7 +181,6 @@ span.bolt {
 .game__box_second {
   display: flex;
   flex-direction: column;
-  flex-direction: column-reverse;
   flex-wrap: wrap;
   height: 800px;
   background-image: url(./img/background_3.jpg);
@@ -244,5 +243,8 @@ span.bolt {
   }
   .text {
     order: 1;
+  }
+  .game__box_second {
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=style.css.map */
