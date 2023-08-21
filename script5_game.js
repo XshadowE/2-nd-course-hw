@@ -20,19 +20,27 @@ function Season() {
 // game 2
 
 function Fruits () {  
+
    let list = ['Яблоко',  'Груша',  'Дыня',  'Виноград',  'Персик',  'Апельсин',  'Мандарин'];
    list = list.sort(() => Math.random() - 0.5);
    alert(list);
-   let result = prompt('Чему равнялся первый элемент массива?');
-   let result2 = prompt('Чему равнялся последний элемент массива?');
-   if (result === list [0] || result2 === list [6]) {
-      alert('«Вы были близки к победе!»');
-   } else if (result === list [0] && result2 === list [6]){
-      alert('Поздравляем, Вы выиграли!!!');
-   } else {
-      alert ('Вы ответили неверно');
-   }
-} 
 
+   let result = prompt('Чему равняется первый элемент массива?');
+   let result2 = prompt('Чему равняется последний элемент массива?');
+
+   for (let z = 0; z < list.length; z++) {
+
+   if (result === list [0] || result2 === list [6]) {
+      } else if (list[0].toLowerCase().includes(result.toLowerCase()) || list [list.length - 1].toLowerCase().includes(result2.toLowerCase())) {
+      alert('«Вы были близки к победе!»');
+   } if (result === list [0] && result2 === list [6]) {
+      } else if (list[0].toLowerCase().includes(result.toLowerCase()) && list [list.length - 1].toLowerCase().includes(result2.toLowerCase())) {
+      alert('Поздравляем, Вы выиграли!!!');
+      } else {
+         alert ('Вы ответили неверно');
+            break;
+         }
+      } 
+   }
 
     
