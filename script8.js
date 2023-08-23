@@ -15,21 +15,15 @@ const people = [
  // задание 2
 
  function isPositive(nums) {
-      if (Number(nums) > 0)
-      return true;
-    else 
-      return false;
+      return nums > 0;
     }
 
     function isMale(gender) {
-        if (gender === 'male')
-        return true;
-      else
-        return false;
+        return gender;
     }
 
     function filter(arr, ruleFunction) {
-      let arrFunction = [];
+      const arrFunction = [];
 
     for (let i = 0; i< arr.length; i++) {
         
@@ -59,17 +53,9 @@ const people = [
     // задание 3
 
      const currentDate = new Date();
-     
-      if (isNaN(+currentDate)) {
-        console.log('Некорректное число');
-      }
-      
-      let timerId = setInterval(() =>  console.log(new Date), 3000);{
 
-        setTimeout(() => { 
-          clearInterval(timerId); 
-          console.log('30 секунд прошло');},30000); 
-        }     
+     let timerId = setInterval(() =>  console.log(new Date), 3000);
+     setTimeout(() => { clearInterval(timerId); console.log('30 секунд прошло');},30000);  
     
 
 
@@ -96,4 +82,6 @@ const people = [
   function sayHi (name) {
     console.log(`Привет, ${name}!`);
 }
-  sayHi('Глеб');
+  delayForSecond1(function() {
+  sayHi('Глеб')
+  });
