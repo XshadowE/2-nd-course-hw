@@ -55,25 +55,24 @@ console.log(Math.min(52, 53, 49, 77, 21, 32));
 // задание 5
 
 function getRandomInt(minValue, maxValue) {
-    return Math.round(Math.random() * (maxValue - minValue)) + minValue;
+    return Math.floor(Math.random() * (maxValue - minValue) + 1) + minValue;
 }
 console.log(getRandomInt (1, 10));
 
 // задание 6
 
-let getRandomArrNumbers = [];
-    for (let f = 0; f < 7; f++){
-        getRandomArrNumbers[f] = Math.round(Math.random() *7); 
-        getRandomArrNumbers = getRandomArrNumbers.slice(0, 3);
-    }
-    console.log(getRandomArrNumbers);
 
-let getRandomArrNumbers2 = [];
-    for (let i = 0; i < 12; i++){
-        getRandomArrNumbers2[i] = Math.round(Math.random() *12); 
-        getRandomArrNumbers2.length = 6;
-    }
-    console.log(getRandomArrNumbers2);
+ function getRandomArrNumbers (length){
+ const numbers = [...Array(length)];
+   for (let i = 0; i < numbers.length; i += 1) {
+   numbers[i] = Math.floor(Math.random());
+   return numbers;
+   }
+   }
+   getRandomArrNumbers(12);
+ 
+     
+    
 
 // задание 7
 
@@ -87,14 +86,15 @@ console.log(currentDate);
 
 // задание 9
 
-let currentDate2 = new Date();
-currentDate2.setDate(73);
-console.log(currentDate2);
+let myDate = new Date();
+myDate.setDate(myDate.getDate() + 73);
+
+console.log(myDate);
 
 // задание 10
 
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь","Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
 
 let currentDate3 = new Date();
 let fullDate = "Пятница: " + currentDate3.getDate() + " " + months[currentDate3.getMonth()] + " " + currentDate3.getFullYear() + ", " + days[currentDate3.getDay()];
