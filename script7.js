@@ -4,34 +4,21 @@ let str = 'js'.toLocaleUpperCase();
 
 console.log(str);
 
-// задание 2
+// задание 2 Создайте функцию, которая в качестве параметров принимает массив строк и строку. Возвращать данная функция должна новый массив, содержащий 
+//только те элементы переданного массива, которые начинаются с переданной строки. Регистр символов не должен влиять.
 
-const animals = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-const search = 'ко';
 
-animals.forEach((animals) => {
-    if (animals.toLowerCase().includes(search.toLowerCase())) {
-        console.log(animals);// ['кошка', 'комар']
+
+function searchStart(arr, letter) {
+    arr = [];
+    return;
+        
     }
-});
 
-const food = ['яблоко', 'груша', 'гриб', 'огурец'];
-const search1 = 'гру';
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
+searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
+searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
 
-food.forEach((food) => {
-    if (food.toLowerCase().includes(search1.toLowerCase())) {
-        console.log(food);// ['груша']
-    }
-});
-
-const buildings = ['Дом', 'Банк', 'Больница', 'Театр'];
-const search2 = 'Кино';
-
-buildings.forEach((buildings) => {
-    if (buildings.toLowerCase().includes(search2.toLowerCase())) {
-        console.log(buildings);// []
-    }
-});
 
 // задание 3
 
@@ -62,18 +49,13 @@ console.log(getRandomInt (1, 10));
 // задание 6
 
 
- function getRandomArrNumbers (length){
- const numbers = [...Array(length)];
-   for (let i = 0; i < numbers.length; i += 1) {
-   numbers[i] = Math.floor(Math.random());
-   return numbers;
+ function getRandomArrNumbers (nums){
+    return Array.from(Array(nums / 2), () => Math.floor(Math.random() * nums));
    }
-   }
+   getRandomArrNumbers(7);
    getRandomArrNumbers(12);
  
      
-    
-
 // задание 7
 
 let randomNumber = getRandomInt(0, 5);
