@@ -4,20 +4,17 @@ let str = 'js'.toLocaleUpperCase();
 
 console.log(str);
 
-// задание 2 Создайте функцию, которая в качестве параметров принимает массив строк и строку. Возвращать данная функция должна новый массив, содержащий 
-//только те элементы переданного массива, которые начинаются с переданной строки. Регистр символов не должен влиять.
 
-
+// задание 2
 
 function searchStart(arr, letter) {
-    arr = [];
-    return;
-        
-    }
+    let el = letter.toLowerCase();
+    return arr.filter((str) => str.toLowerCase().startsWith(el));
+}
 
-searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
-searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
-searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
+console.log (searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); // ['кошка', 'комар']
+console.log (searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
+console.log (searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
 
 
 // задание 3
@@ -50,10 +47,14 @@ console.log(getRandomInt (1, 10));
 
 
  function getRandomArrNumbers (nums){
-    return Array.from(Array(nums / 2), () => Math.floor(Math.random() * nums));
+    let arr1 = [];
+    for (let i = 0; i < Math.floor(nums / 2); i++){
+        arr1.push(Math.floor(Math.random() * (nums + 1)));
+    }
+    return arr1;
    }
-   getRandomArrNumbers(7);
-   getRandomArrNumbers(12);
+   console.log(getRandomArrNumbers(7));
+   console.log(getRandomArrNumbers(12));
  
      
 // задание 7
