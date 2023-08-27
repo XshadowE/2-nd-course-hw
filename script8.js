@@ -14,33 +14,28 @@ const people = [
 
  // задание 2
 
- function isPositive(nums) {
-      return nums > 0;
+ function isPositive(filter) {
+      if (filter > 0)
+      return true;
     }
 
-    function isMale(gender) {
-        return gender;
+    function isMale(filter) {
+        if (filter.gender === 'male')
+        return true;
     }
 
     function filter(arr, ruleFunction) {
       const arrFunction = [];
 
     for (let i = 0; i< arr.length; i++) {
-        
-          if (ruleFunction(arr[i].gender)) {
-            arrFunction.push(arr[i]);
-              return people1;
-        }
-      
-       else if (ruleFunction(arr[i])) {
-        arrFunction.push(arr[i]);
+      if (ruleFunction (arr[i])) {
+      arrFunction.push(arr[i]);
       }
     }
-        return arrFunction;
-    }
-
+    return arrFunction;
+  }
     console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
-    
+
     const people1 = [
        {name: 'Глеб', gender: 'male'},
        {name: 'Анна', gender: 'female'},
