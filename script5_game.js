@@ -30,18 +30,19 @@ function Fruits () {
 
    for (let z = 0; z < list.length; z++) {
       if (result === " " || result === "" || result === null && result2 === " " || result2 === "" || result2 === null) {
-            alert('Одно или оба значения введены неверно!!!');
-               if (list[0].toLowerCase() === result.toLowerCase() && list [list.length - 1].toLowerCase() === result2.toLowerCase()) {
-                  alert ('Поздравляем, вы выиграли!')
-                     break;
-                        } else if (list[0].toLowerCase() === result.toLowerCase() || list [list.length - 1].toLowerCase() === result2.toLowerCase()) {
-                           alert('Вы были близки к победе!');
-                              break;
-                                 } else {
-                                    alert ('Вы ответили неверно');
-                                       break;
+         alert('Одно или оба значения введены неверно!!!');
+            break;
+         } else if (list[0].toLowerCase() === result.toLowerCase() && list [list.length - 1].toLowerCase() === result2.toLowerCase()) {
+               alert ('Поздравляем, вы выиграли!');
+                  break;
+                     } else if (list[0].toLowerCase() === result.toLowerCase() || list [list.length - 1].toLowerCase() === result2.toLowerCase()) {
+                        alert('Вы были близки к победе!');
+                           break;
+                              } else {
+                                 alert ('Вы ответили неверно');
+                                    break;
          }
       } 
    }
-}
+
     
