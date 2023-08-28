@@ -14,19 +14,19 @@
         <div class="header center">
             <h1 class="header__title">Добро пожаловать <br> на мой сайт!</h1>
             <p class="header__text">Вам предстоит пройти несколько увлекательных <br> игр. Если готов нажимай 
-            <span class="bolt">поехали</span>  и 
+            <a href="#a1" span class="bolt">поехали</span>  и 
             <span class="bolt">приступай</span></p>
             <a class="header__button" href="#">Поехали!</a>
         </div>
     </div>
     <div class="main__catalog center">
-        <div class="main">
-            <div class="main__game main-game1"><a class="main__text" href="#">Игра 1</a></div>
-            <div class="main__game main-game2"><a class="main__text" href="#">Игра 2</a></div>
+        <div id="a1" class="main">
+            <div class="main__game main-game1"><a class="main__text" href="#a2">Игра 1</a></div>
+            <div class="main__game main-game2"><a class="main__text" href="#a3">Игра 2</a></div>
             <div class="main__game main-game3"><a class="main__text" href="#">Игра 3</a></div>
         </div>
     </div>
-    <div class="game__box center">
+    <div id="a2" class="game__box center">
         <h1 class="header__title-box">Времена года!</h1>
         <p class="header__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы <br> узнаете к какому времени года он относится 
         <a class="header__button" href="#" onclick="Season();";return false;>Играть!</a>
@@ -34,7 +34,7 @@
         <img class="vector" src="./img/vector.png" alt="vector">
         </div>
     </div>
-    <div class="game__box_second center">
+    <div id="a3" class="game__box_second center">
         <div class="text">
             <h1 class="header__title-box">Запомни слова </h1>
             <p class="header__text">При нажатии на кнопку играть, вы увидите несколько слов, <br> которые вам необходимо запомнить
