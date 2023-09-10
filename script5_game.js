@@ -25,22 +25,19 @@ function Fruits () {
    list = list.sort(() => Math.random() - 0.5);
    alert(list);
 
-   let result = prompt('Чему равняется первый элемент массива?');
-   let result2 = prompt('Чему равняется последний элемент массива?');
+   let result = prompt('Чему равняется первый элемент массива?').replace(/\ s/g, "");
+   let result2 = prompt('Чему равняется последний элемент массива?').replace(/\ s/g, "");
 
    for (let z = 0; z < list.length; z++) {
-      if (result === " " || result === "" || result === null && result2 === " " || result2 === "" || result2 === null) {
-         alert('Одно или оба значения введены неверно!!!');
+      if (list[0].toLowerCase() === result.toLowerCase() && list [list.length - 1].toLowerCase() === result2.toLowerCase()) {
+         alert ('Поздравляем, вы выиграли!');
             break;
-         } else if (list[0].toLowerCase() === result.toLowerCase() && list [list.length - 1].toLowerCase() === result2.toLowerCase()) {
-               alert ('Поздравляем, вы выиграли!');
-                  break;
-                     } else if (list[0].toLowerCase() === result.toLowerCase() || list [list.length - 1].toLowerCase() === result2.toLowerCase()) {
-                        alert('Вы были близки к победе!');
-                           break;
-                              } else {
-                                 alert ('Вы ответили неверно');
-                                    break;
+               } else if (list[0].toLowerCase() === result.toLowerCase() || list [list.length - 1].toLowerCase() === result2.toLowerCase()) {
+                  alert('Вы были близки к победе!');
+                     break;
+                        } else {
+                           alert ('Одно или оба значения введены неверно!!!');
+                              break;
          }
       } 
    }
